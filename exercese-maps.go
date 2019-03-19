@@ -6,7 +6,9 @@ import (
 )
 
 func WordCount(s string) map[string]int {
-	m := map[string]int{}
+	//m := map[string]int{}
+	m := make(map[string]int)
+
 	sl := strings.Split(s, " ")
 
 	for i := 0; i < len(sl); i++ {
