@@ -12,7 +12,7 @@ func WordCount(s string) map[string]int {
 	sl := strings.Split(s, " ")
 
 	for i := 0; i < len(sl); i++ {
-		m[sl[i]] += 1
+		m[sl[i]] ++
 	}
 	return m
 }
