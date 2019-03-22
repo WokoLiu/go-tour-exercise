@@ -1,3 +1,6 @@
+// https://tour.golang.org/methods/23
+// https://tour.go-zh.org/methods/23
+
 package main
 
 import (

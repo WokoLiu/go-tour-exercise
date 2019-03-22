@@ -1,3 +1,6 @@
+// https://tour.golang.org/flowcontrol/8
+// https://tour.go-zh.org/flowcontrol/8
+
 package main
 
 import (

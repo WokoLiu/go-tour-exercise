@@ -1,3 +1,6 @@
+// https://tour.golang.org/moretypes/26
+// https://tour.go-zh.org/moretypes/26
+
 package main
 
 import "fmt"
@@ -5,7 +8,6 @@ import "fmt"
 // fibonacci is a function that returns
 // a function that returns an int.
 
-// start with 0
 func fibonacci() func() int {
 	first, second := 1, 0
 	fib := func() int {

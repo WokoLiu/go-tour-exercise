@@ -1,3 +1,6 @@
+// https://tour.golang.org/concurrency/7
+// https://tour.go-zh.org/concurrency/7
+
 package main
 
 import (

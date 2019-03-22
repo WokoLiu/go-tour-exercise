@@ -1,3 +1,6 @@
+// https://tour.golang.org/methods/22
+// https://tour.go-zh.org/methods/22
+
 package main
 
 import "golang.org/x/tour/reader"

@@ -1,3 +1,6 @@
+// https://tour.golang.org/moretypes/23
+// https://tour.go-zh.org/moretypes/23
+
 package main
 
 import (
