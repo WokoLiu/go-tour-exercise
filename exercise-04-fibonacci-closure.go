@@ -7,17 +7,7 @@ import "fmt"
 
 // start with 0
 func fibonacci() func() int {
-	first, second := -1, 1
-	fib := func() int {
-		first, second = second, first+second
-		return second
-	}
-	return fib
-}
-
-// start with 1
-func fibonacci2() func() int {
-	first, second := 0, 1
+	first, second := 1, 0
 	fib := func() int {
 		first, second = second, first+second
 		return first
