@@ -7,11 +7,19 @@ import "golang.org/x/tour/reader"
 
 type MyReader struct{}
 
-// TODO: Add a Read([]byte) (int, error) method to MyReader.
-
-func (r MyReader) Read(b []byte) (n int, err error) {
+// A Read([]byte) (int, error) method to MyReader.
+func (r MyReader) _Read(b []byte) (n int, err error) {
+	// One byte at a time is usable but too inefficient
 	b[0] = 'A'
 	return 1, nil
+}
+
+func (r MyReader) Read(b []byte) (n int, err error) {
+	// use len(b), not cap(b)
+	for i := range b {
+		b[i] = 'A'
+	}
+	return len(b), nil
 }
 
 func main() {
