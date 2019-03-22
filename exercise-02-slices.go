@@ -6,6 +6,8 @@ package main
 import "golang.org/x/tour/pic"
 
 func Pic(dx, dy int) [][]uint8 {
+	// didn't init slice with length
+	// official solution is a way to init slice with length
 	res := [][]uint8{}
 	for x := 0; x < dy; x++ {
 		temp := []uint8{}
