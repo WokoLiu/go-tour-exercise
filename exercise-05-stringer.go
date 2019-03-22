@@ -8,14 +8,22 @@ import "strings"
 
 type IPAddr [4]byte
 
-// TODO: Add a "String() string" method to IPAddr.
+// Add a "String() string" method to IPAddr.
 
-func (a IPAddr) String() string {
+func (ip IPAddr) _String() string {
+	// if IPAddr has varying length
+	// this maybe ok
 	j := []string{}
-	for _, i := range a {
+	for _, i := range ip {
 		j = append(j, fmt.Sprintf("%d", i))
 	}
 	return strings.Join(j, ".")
+}
+
+func (ip IPAddr) String() string {
+	// since we know type IPAddr is [4]byte,
+	// it's no need to use strings.Join
+	return fmt.Sprintf("%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3])
 }
 
 func main() {
